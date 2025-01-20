@@ -28,7 +28,7 @@ class FileReverseTest {
     }
 
     @Test
-    void reverseFileContent() throws IOException {
+    void reverseFileContent() {
         String inputContent = "ABC";
         String outputContent = "CBA";
         try (MockedStatic<Files> mockedFiles = mockStatic(Files.class)) {

@@ -6,7 +6,7 @@ import java.nio.file.Path;
 
 public class FileReverse {
     public void reverseFileContent(Path inputFile, Path outputFile) {
-        String content = null;
+        String content;
         try {
             content = new String(Files.readAllBytes(inputFile));
 
